@@ -1,5 +1,14 @@
 const ScheduleList { 
-
-
-
+    "ExamDateOne":  
+    "ExamNameOne": 
+    "ExamTimeOne": 
+    "ExamDateTwo":  
+    "ExamNameTwo": 
+    "ExamTimeTwo":
+    "ExamDateThree":  
+    "ExamNameThree": 
+    "ExamTimeThree":
+    "ExamDateFour":  
+    "ExamNameFour": 
+    "ExamTimeFour":
 } 
