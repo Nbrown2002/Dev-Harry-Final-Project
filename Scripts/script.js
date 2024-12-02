@@ -61,6 +61,5 @@ NewSchedule.addEventListener("click", function() {
 
   document.addEventListener("submit", function()  {
   console.log(JSON.stringify(NewSchedule));
-  document.getElementById("Final_Schedule").innerText = JSON.stringify(NewSchedule)
-
+  document.getElementById("Final_Schedule").innerText = JSON.stringify(NewSchedule);
   });
