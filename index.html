@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <!-- Relative links to style-sheets and inputs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js">
+
+    <!-- References to other pages in the same file -->
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="Script" href="Scripts/script.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+<body>
+    <!-- Creation of container to hold all inputs -->
+    <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://codepen.io/barrycumbie/pen/qBYXeGN" target="_blank" >Access Nu Validator</a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/Nbrown2002/Dev-Harry-Final-Project" target="_blank">Access Github Repository</a>
+            </li> 
+    </nav>    
+    <!-- Header-->
+        <div class="header">
+        <h1> Final Exam Schedule Generator </h1>
+        <h2> Created By: Noah Brown </h2>
+        <p> Instructions: Fill in the following information and recieve your schedule. </p> 
+    </div>
+    
+    <form id="TestDateFill">
+  <!-- Input section for the first exam-->
+    <label for="ExamDateOne">Please Enter in the Date of your First Exam:</label>
+    <input type="date" id="ExamDateOne" name="ExamDateOne">
+    <br>
+    <label for="ExamNameOne">What is it's title?: </label>
+    <input type="text" id="ExamNameOne" name="ExamNameOne">
+    <br>
+    <label for="ExamTimeOne">Select a time:</label>
+    <input type="time" id="ExamTimeOne" name="ExamTimeOne">
+    <br>
+    <input type="radio" id="Basic" name="Type" value="Basic" > 
+    <label for="In-Person">In-Person</label>
+    <br>
+     <input type="radio" id="Plus" name=Type value="Plus"> 
+    <label for="Online">Online</label>
+    <br>
+    <br>
+
+    <!-- Input section for the Second Exam-->
+    <label for="ExamDateTwo">Please Enter in the Date of your Second Exam:</label>
+    <input type="date" id="ExamDateTwo" name="ExamDateTwo">
+    <br>
+    <label for="ExamNameTwo">What is it's title?: </label>
+    <input type="text" id="ExamNameTwo" name="ExamNameTwo">
+    <br>
+    <label for="ExamTimeTwo">Select a time:</label>
+    <input type="time" id="ExamTimeTwo" name="ExamTimeTwo">
+    <br>
+    <input type="radio" id="Basic" name="Type" value="Basic" > 
+    <label for="In-Person">In-Person</label>
+    <br>
+     <input type="radio" id="Plus" name=Type value="Plus"> 
+    <label for="Online">Online</label>
+    <br>
+    <br>
+
+    <!-- Input section for the Third Exam-->
+    <label for="ExamDateThree">Please Enter in the Date of your Third Exam:</label>
+    <input type="date" id="ExamDateThree" name="ExamDateThree">
+    <br>
+    <label for="ExamNameThree">What is it's title?: </label>
+    <input type="text" id="ExamNameThree" name="ExamNameThree">
+    <br>
+    <label for="ExamTimeThree">Select a time:</label>
+    <input type="time" id="ExamTimeThree" name="ExamTimeThree">
+    <br>
+    <input type="radio" id="Basic" name="Type" value="Basic" > 
+    <label for="In-Person">In-Person</label>
+    <br> 
+    <input type="radio" id="Plus" name=Type value="Plus"> 
+    <label for="Online">Online</label>
+    <br>
+    <br>
+
+   
+    
+<!-- Submit button and check to remember-->
+    <input type="checkbox" id="RememberMe" name="RememberMe" value="RememberMe">
+    <label for="RememberMe"> Remember Me? </label>
+    <br>
+    <br>
+    <button type="submit" id="Print-Schedule" value="Print-Schedule"> Print Schedule </button>
+    <button type="button" id="Default-Schedule" value="Default-Schedule"> Load in Default Schedule </button>
+    </form>
+    <!-- Footer-->
+    <div class="footer" id="Final-Schedule">
+        <div class="container">
+    <p> Copyright ThinkTank 2024</p>
+    <a href="https://github.com/Nbrown2002/Dev-Harry-Final-Project" target="_blank">Visit Github Repo</a>
+    <a href=""> Visit Nu Validator</a>
+    </div>
+    </div>
+    
+</body>
+</form>
+</html>
+
