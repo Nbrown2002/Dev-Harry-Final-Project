@@ -25,21 +25,21 @@ const defaultschedule = {
 // This will load into the input fields the default schedule from the JSON File
 const loaddefault = document.getElementById('Default-Schedule');
 loaddefault.addEventListener("click", function()  {
-document.getElementById('Default-Schedule').addEventListener('click', () => { 
-document.getElementById('ExamDateOne').value = defaultschedule.ExamDateOne; 
-document.getElementById('ExamNameOne').value = defaultschedule.ExamNameOne; 
-document.getElementById('ExamTimeone').value = defaultschedule.ExamTimeOne; 
-document.getElementById('ExamOneLocal').value = defaultschedule.ExamOneLocal; 
-document.getElementById('ExamDateTwo').value = defaultschedule.ExamDateTwo; 
-document.getElementById('ExamNameTwo').value = defaultschedule.ExamNameTwo; 
-document.getElementById('ExamTimeTwo').value = defaultschedule.ExamTimeTwo; 
-document.getElementById('ExamTwoLocal').value = defaultschedule.ExamTwoLocal; 
-document.getElementById('ExamDateThree').value = defaultschedule.ExamDateThree; 
-document.getElementById('ExamNameThree').value = defaultschedule.ExamNameThree; 
-document.getElementById('ExamTimeThree').value = defaultschedule.ExamTimeThree; 
-document.getElementById('RememberMe').value = defaultschedule.RememberMe; 
+  document.getElementById('Default-Schedule').addEventListener('click', () => { 
+    document.getElementById('ExamDateOne').value = defaultschedule.ExamDateOne; 
+    document.getElementById('ExamNameOne').value = defaultschedule.ExamNameOne; 
+    document.getElementById('ExamTimeone').value = defaultschedule.ExamTimeOne; 
+    document.getElementById('ExamOneLocal').value = defaultschedule.ExamOneLocal; 
+    document.getElementById('ExamDateTwo').value = defaultschedule.ExamDateTwo; 
+    document.getElementById('ExamNameTwo').value = defaultschedule.ExamNameTwo; 
+    document.getElementById('ExamTimeTwo').value = defaultschedule.ExamTimeTwo; 
+    document.getElementById('ExamTwoLocal').value = defaultschedule.ExamTwoLocal; 
+    document.getElementById('ExamDateThree').value = defaultschedule.ExamDateThree; 
+    document.getElementById('ExamNameThree').value = defaultschedule.ExamNameThree; 
+    document.getElementById('ExamTimeThree').value = defaultschedule.ExamTimeThree; 
+    document.getElementById('RememberMe').value = defaultschedule.RememberMe; 
+  });
 });
-
 
 // This is the new schedule produced based on the
 const NewSchedule = document.getElementById('Print-Schedule'); 
