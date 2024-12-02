@@ -44,18 +44,18 @@ document.getElementById('RememberMe').value = defaultschedule.RememberMe;
 // This is the new schedule produced based on the
 const NewSchedule = document.getElementById('Print-Schedule'); 
 NewSchedule.addEventListener("click", function() { 
-  ExamDateOne: document.getElementbyId('ExamDateOne').value;
-  ExamNameOne: document.getElementbyId('ExamNameOne').value;
-  ExamTimeOne: document.getElementbyId('ExamTimeOne').value;
-  ExamOneLocal: document.getElementbyId('ExamOneLocal').value;
-  ExamDateTwo: document.getElementbyId('ExamDateTwo').value;
-  ExamNameTwo: document.getElementbyId('ExamNameTwo').value;
-  ExamTimeTwo: document.getElementbyId('ExamTimeTwo').value;
-  ExamTwoLocal: document.getElementbyId('ExamTwoLocal').value;
-  ExamDateThree: document.getElementbyId('ExamDateThree').value; 
-  ExamNameThree: document.getElementbyId('ExamNameThree').value;
-  ExamTimeThree: document.getElementbyId('ExamTimeThree').value;
-  ExamThreeLocal: document.getElementbyId('ExamThreeLocal').value 
+  let ExamDateOne = document.getElementbyId('ExamDateOne').value;
+  let ExamNameOne = document.getElementbyId('ExamNameOne').value;
+  let ExamTimeOne = document.getElementbyId('ExamTimeOne').value;
+  let ExamOneLocal = document.getElementbyId('ExamOneLocal').value;
+  let ExamDateTwo = document.getElementbyId('ExamDateTwo').value;
+  let ExamNameTwo = document.getElementbyId('ExamNameTwo').value;
+  let ExamTimeTwo = document.getElementbyId('ExamTimeTwo').value;
+  let ExamTwoLocal = document.getElementbyId('ExamTwoLocal').value;
+  let ExamDateThree = document.getElementbyId('ExamDateThree').value; 
+  let ExamNameThree = document.getElementbyId('ExamNameThree').value;
+  let ExamTimeThree = document.getElementbyId('ExamTimeThree').value;
+  let ExamThreeLocal = document.getElementbyId('ExamThreeLocal').value 
   };
 
   document.addEventListener("submit", function()  {
