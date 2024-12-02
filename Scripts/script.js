@@ -56,7 +56,7 @@ NewSchedule.addEventListener("click", function() {
   let ExamNameThree = document.getElementbyId('ExamNameThree').value;
   let ExamTimeThree = document.getElementbyId('ExamTimeThree').value;
   let ExamThreeLocal = document.getElementbyId('ExamThreeLocal').value 
-  };
+  });
 
   document.addEventListener("submit", function()  {
   console.log(JSON.stringify(NewSchedule));
