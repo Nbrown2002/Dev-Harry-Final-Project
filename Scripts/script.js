@@ -29,14 +29,30 @@ loaddefault.addEventListener("click", function()  {
     document.getElementById('ExamDateOne').value = defaultschedule.ExamDateOne; 
     document.getElementById('ExamNameOne').value = defaultschedule.ExamNameOne; 
     document.getElementById('ExamTimeone').value = defaultschedule.ExamTimeOne; 
-    document.getElementById('ExamOneLocal').value = defaultschedule.ExamOneLocal; 
+    if(defaultschedule.ExamOneLocal) == "Online" { 
+      document.getElementById("Online1").checked = true;
+    else {
+      document.getElementById("In-Person1").checked = true; 
+    }  
+  }
     document.getElementById('ExamDateTwo').value = defaultschedule.ExamDateTwo; 
     document.getElementById('ExamNameTwo').value = defaultschedule.ExamNameTwo; 
     document.getElementById('ExamTimeTwo').value = defaultschedule.ExamTimeTwo; 
-    document.getElementById('ExamTwoLocal').value = defaultschedule.ExamTwoLocal; 
+  if(defaultschedule.ExamTwoLocal) == "Online" { 
+      document.getElementById("Online2").checked = true;
+    else {
+      document.getElementById("In-Person2").checked = true; 
+    }  
+  } 
     document.getElementById('ExamDateThree').value = defaultschedule.ExamDateThree; 
     document.getElementById('ExamNameThree').value = defaultschedule.ExamNameThree; 
     document.getElementById('ExamTimeThree').value = defaultschedule.ExamTimeThree; 
+if(defaultschedule.ExamThreeLocal) == "Online" { 
+      document.getElementById("Online3").checked = true;
+    else {
+      document.getElementById("In-Person3").checked = true; 
+    }  
+  } 
     document.getElementById('RememberMe').value = defaultschedule.RememberMe; 
   });
 });
