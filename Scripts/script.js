@@ -10,11 +10,11 @@ const defaultschedule = {
   ExamNameOne:"Adv IT Infrastructure",
   ExamTimeOne:"23:59",
   ExamOneLocal: "Online",
-  ExamDateTwo:"11/25/2024",
+  ExamDateTwo:"2024-11-25",
   ExamNameTwo:"Art Appreciation",
   ExamTimeTwo:"09:00",
   ExamTwoLocal: "Online", 
-  ExamDateThree:"11/26/2024",
+  ExamDateThree:"2024-11-26",
   ExamNameThree:"Web Development", 
   ExamTimeThree:"23:59",
   ExamThreeLocal: "Online", 
@@ -30,29 +30,29 @@ loaddefault.addEventListener("click", function()  {
     document.getElementById('ExamNameOne').value = defaultschedule.ExamNameOne; 
     document.getElementById('ExamTimeone').value = defaultschedule.ExamTimeOne; 
     if(defaultschedule.ExamOneLocal == "Online" ){ 
-      document.getElementById("Online1").checked = true;
+      document.getElementById("Online1").checked = true;}
     else {
       document.getElementById("In-Person1").checked = true; 
     }  
-  }
+   
     document.getElementById('ExamDateTwo').value = defaultschedule.ExamDateTwo; 
     document.getElementById('ExamNameTwo').value = defaultschedule.ExamNameTwo; 
     document.getElementById('ExamTimeTwo').value = defaultschedule.ExamTimeTwo; 
   if(defaultschedule.ExamTwoLocal == "Online") { 
-      document.getElementById("Online2").checked = true;
+      document.getElementById("Online2").checked = true;}
     else {
       document.getElementById("In-Person2").checked = true; 
     }  
-  } 
+   
     document.getElementById('ExamDateThree').value = defaultschedule.ExamDateThree; 
     document.getElementById('ExamNameThree').value = defaultschedule.ExamNameThree; 
     document.getElementById('ExamTimeThree').value = defaultschedule.ExamTimeThree; 
 if(defaultschedule.ExamThreeLocal == "Online") { 
-      document.getElementById("Online3").checked = true;
+      document.getElementById("Online3").checked = true;}
     else {
       document.getElementById("In-Person3").checked = true; 
     }  
-  } 
+   
     document.getElementById('RememberMe').value = defaultschedule.RememberMe; 
   });
 });
