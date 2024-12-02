@@ -8,15 +8,15 @@ console.log("Ready!");
 const defaultschedule = {
   ExamDateOne:"2024-11-24", 
   ExamNameOne:"Adv IT Infrastructure",
-  ExamTimeOne:"11:59 PM",
+  ExamTimeOne:"23:59",
   ExamOneLocal: "Online",
   ExamDateTwo:"11/25/2024",
   ExamNameTwo:"Art Appreciation",
-  ExamTimeTwo:"9:00 PM",
+  ExamTimeTwo:"09:00",
   ExamTwoLocal: "Online", 
   ExamDateThree:"11/26/2024",
   ExamNameThree:"Web Development", 
-  ExamTimeThree:"11:59 PM",
+  ExamTimeThree:"23:59",
   ExamThreeLocal: "Online", 
   RememberMe: true
 };
