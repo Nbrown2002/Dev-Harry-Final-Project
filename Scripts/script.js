@@ -18,11 +18,13 @@ const defaultschedule = {
   ExamNameThree:"Web Development", 
   ExamTimeThree:"11:59 PM",
   ExamThreeLocal: "Online", 
-  RememberMe: True, 
+  RememberMe: true
 };
 
 
 // This will load into the input fields the default schedule from the JSON File
+const loaddefault = document.getElementById('Default-Schedule');
+loaddefault.addEventListener("click", function()  {
 document.getElementById('Default-Schedule').addEventListener('click', () => { 
 document.getElementById('ExamDateOne').value = defaultschedule.ExamDateOne; 
 document.getElementById('ExamNameOne').value = defaultschedule.ExamNameOne; 
@@ -34,14 +36,14 @@ document.getElementById('ExamTimeTwo').value = defaultschedule.ExamTimeTwo;
 document.getElementById('ExamTwoLocal').value = defaultschedule.ExamTwoLocal; 
 document.getElementById('ExamDateThree').value = defaultschedule.ExamDateThree; 
 document.getElementById('ExamNameThree').value = defaultschedule.ExamNameThree; 
+document.getElementById('ExamTimeThree').value = defaultschedule.ExamTimeThree; 
 document.getElementById('RememberMe').value = defaultschedule.RememberMe; 
 });
 
 
 // This is the new schedule produced based on the
-document.getElementById('Print-Schedule').addEventListener('submit', function(event) =>
-  event.preventDefault(); 
-  const NewSchedule = { 
+const NewSchedule = document.getElementById('Print-Schedule'); 
+NewSchedule.addEventListener("click", function() { 
   ExamDateOne: document.getElementbyId('ExamDateOne').value,
   ExamNameOne: document.getElementbyId('ExamNameOne').value,
   ExamTimeOne: document.getElementbyId('ExamTimeOne').value,
@@ -55,5 +57,9 @@ document.getElementById('Print-Schedule').addEventListener('submit', function(ev
   ExamTimeThree: document.getElementbyId('ExamTimeThree').value,
   ExamThreeLocal: document.getElementbyId('ExamThreeLocal').value, 
   };
-console.log(JSON.stringify(NewSchedule))
-document.getElementById(Final-Schedule).innerText = JSON.stringify(NewSchedule)
+
+  document.addEventListener("submit", function()  {
+  console.log(JSON.stringify(NewSchedule));
+  document.getElementById(Final_Schedule).innerText = JSON.stringify(NewSchedule)
+
+  });
