@@ -45,7 +45,6 @@ const defaultschedule = {
 document.getElementById('Print-Schedule').addEventListener("click", function (event) { 
   event.preventDefault(); 
 
-  
 // This is the new schedule produced based on the
 const NewSchedule =  { 
    ExamDateOne: document.getElementById('ExamDateOne').value,
