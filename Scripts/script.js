@@ -50,19 +50,19 @@ const NewSchedule = {
    ExamDateOne: document.getElementById('ExamDateOne').value,
    ExamNameOne: document.getElementById('ExamNameOne').value,
    ExamTimeOne: document.getElementById('ExamTimeOne').value,
-   ExamOneLocal: document.getElementById('ExamOneLocal').value,
+   ExamOneLocal: document.getElementById('input[name="In-Person1"]:checked') ? "In-Person" : "Online",
    ExamDateTwo: document.getElementById('ExamDateTwo').value,
    ExamNameTwo: document.getElementById('ExamNameTwo').value,
    ExamTimeTwo: document.getElementById('ExamTimeTwo').value,
-   ExamTwoLocal: document.getElementById('ExamTwoLocal').value,
+   ExamTwoLocal: document.getElementById('input[name="In-Person2"]:checked') ? "In-Person" : "Online",
    ExamDateThree: document.getElementById('ExamDateThree').value, 
    ExamNameThree: document.getElementById('ExamNameThree').value,
    ExamTimeThree: document.getElementById('ExamTimeThree').value,
-   ExamThreeLocal: document.getElementById('ExamThreeLocal').value,
+   ExamThreeLocal: document.getElementById('input[name="In-Person3"]:checked') ? "In-Person" : "Online",
   RememberMe: document.getElementById('RememberMe').checked
 };
 
 
   console.log(JSON.stringify(NewSchedule, null, 2));
-  document.getElementById("Final-Schedule").innerText = JSON.stringify(NewSchedule, null, 2);
+  document.querySelector(".footer").innerText = JSON.stringify(NewSchedule, null, 2);
   });
