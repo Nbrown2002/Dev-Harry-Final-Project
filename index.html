@@ -1,14 +1,16 @@
 <!DOCTYPE html> 
 <html lang="en" > 
     <head>
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Final Project </title>
     <!-- Relative links to style-sheets and inputs-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
     <!-- References to other pages in the same file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="Styles/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
 <body>
@@ -33,7 +35,7 @@
         <p> Instructions: Fill in the following information and recieve your schedule. </p> 
     </div>
     
-    <form id="TestDateFill" class="container">
+    <form id="TestDateFill">
   <!-- Input section for the first exam-->
     <label for="ExamDateOne">Please Enter in the Date of your First Exam:</label>
     <input type="date" id="ExamDateOne" name="ExamDateOne">
@@ -92,8 +94,8 @@
     <label for="RememberMe"> Remember Me? </label>
     <br>
     <br>
-    <button type="button" id="Print-Schedule" value="Print-Schedule"> Print Schedule</button>
-    <button type="button" id="Default-Schedule" value="Default-Schedule"> Load in Default Schedule</button>
+    <button type="button" id="Print-Schedule" value="Print-Schedule" class="btn btn-primary btn-custom"> Print Schedule</button>
+    <button type="button" id="Default-Schedule" value="Default-Schedule"  class="btn btn-secondary btn-custom"> Load in Default Schedule</button>
     </form>
    
     
