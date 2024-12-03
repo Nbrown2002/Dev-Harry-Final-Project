@@ -42,7 +42,7 @@ const defaultschedule = {
     document.getElementById('RememberMe').checked = defaultschedule.RememberMe; 
   });
 
-document.getElementById('Print-Schedule').addEventListener("submit", function (event) { 
+document.getElementById('Print-Schedule').addEventListener("click", function (event) { 
   event.preventDefault(); 
 
 // This is the new schedule produced based on the
