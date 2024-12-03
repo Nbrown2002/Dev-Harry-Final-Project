@@ -25,7 +25,7 @@ const defaultschedule = {
 // This will load into the input fields the default schedule from the JSON File
 const loaddefault = document.getElementById('Default-Schedule');
 loaddefault.addEventListener("click", function()  {
-  document.getElementById('Default-Schedule').addEventListener('click', () => { 
+  // document.getElementById('Default-Schedule').addEventListener('click', () => { 
     document.getElementById('ExamDateOne').value = defaultschedule.ExamDateOne; 
     document.getElementById('ExamNameOne').value = defaultschedule.ExamNameOne; 
     document.getElementById('ExamTimeOne').value = defaultschedule.ExamTimeOne; 
@@ -60,18 +60,18 @@ if(defaultschedule.ExamThreeLocal == 'Online') {
 // This is the new schedule produced based on the
 const NewSchedule = document.getElementById('Print-Schedule'); 
 NewSchedule.addEventListener("click", function() { 
-  let ExamDateOne = document.getElementbyId('ExamDateOne').value;
-  let ExamNameOne = document.getElementbyId('ExamNameOne').value;
-  let ExamTimeOne = document.getElementbyId('ExamTimeOne').value;
-  let ExamOneLocal = document.getElementbyId('ExamOneLocal').value;
-  let ExamDateTwo = document.getElementbyId('ExamDateTwo').value;
-  let ExamNameTwo = document.getElementbyId('ExamNameTwo').value;
-  let ExamTimeTwo = document.getElementbyId('ExamTimeTwo').value;
-  let ExamTwoLocal = document.getElementbyId('ExamTwoLocal').value;
-  let ExamDateThree = document.getElementbyId('ExamDateThree').value; 
-  let ExamNameThree = document.getElementbyId('ExamNameThree').value;
-  let ExamTimeThree = document.getElementbyId('ExamTimeThree').value;
-  let ExamThreeLocal = document.getElementbyId('ExamThreeLocal').value;
+  let ExamDateOne = document.getElementById('ExamDateOne').value;
+  let ExamNameOne = document.getElementById('ExamNameOne').value;
+  let ExamTimeOne = document.getElementById('ExamTimeOne').value;
+  let ExamOneLocal = document.getElementById('ExamOneLocal').value;
+  let ExamDateTwo = document.getElementById('ExamDateTwo').value;
+  let ExamNameTwo = document.getElementById('ExamNameTwo').value;
+  let ExamTimeTwo = document.getElementById('ExamTimeTwo').value;
+  let ExamTwoLocal = document.getElementById('ExamTwoLocal').value;
+  let ExamDateThree = document.getElementById('ExamDateThree').value; 
+  let ExamNameThree = document.getElementById('ExamNameThree').value;
+  let ExamTimeThree = document.getElementById('ExamTimeThree').value;
+  let ExamThreeLocal = document.getElementById('ExamThreeLocal').value;
   }
   );
 
