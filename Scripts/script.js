@@ -23,7 +23,7 @@ const defaultschedule = {
 
 
 // This will load into the input fields the default schedule from the JSON File
-   document.getElementById('Default-Schedule').addEventListener('click', function() { 
+   document.getElementById('Default-Schedule').addEventListener('click', function () { 
     document.getElementById('ExamDateOne').value = defaultschedule.ExamDateOne; 
     document.getElementById('ExamNameOne').value = defaultschedule.ExamNameOne; 
     document.getElementById('ExamTimeOne').value = defaultschedule.ExamTimeOne; 
@@ -46,7 +46,7 @@ document.getElementById('Print-Schedule').addEventListener("click", function (ev
   event.preventDefault(); 
 
 // This is the new schedule produced based on the
-const NewSchedule =  { 
+const NewSchedule = { 
    ExamDateOne: document.getElementById('ExamDateOne').value,
    ExamNameOne: document.getElementById('ExamNameOne').value,
    ExamTimeOne: document.getElementById('ExamTimeOne').value,
