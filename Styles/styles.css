@@ -19,12 +19,18 @@
     font-family: 'Times New Roman', Times, serif; 
 }
 
+.container { 
+    text-align: right; 
+    color: white; 
+}
+
+
 body { 
     background-repeat: no-repeat; 
     background-attachment: fixed; 
     background-size: cover;
-   /* background-image: url('../Pictures/Chalkboard.jpg'); */
-   /* color: white; */
+    background-image: url('../Pictures/Chalkboard.jpg'); 
+    color: white; 
 }
 
 
