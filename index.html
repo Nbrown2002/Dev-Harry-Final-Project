@@ -6,7 +6,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
-
     <!-- References to other pages in the same file -->
     <link rel="stylesheet" href="Styles/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,6 +25,7 @@
         </ul> 
     </div>
     </nav>    
+    
     <!-- Header-->
         <div class="header">
         <h1> Final Exam Schedule Generator </h1>
@@ -33,7 +33,7 @@
         <p> Instructions: Fill in the following information and recieve your schedule. </p> 
     </div>
     
-    <form id="TestDateFill">
+    <form id="TestDateFill" class="container">
   <!-- Input section for the first exam-->
     <label for="ExamDateOne">Please Enter in the Date of your First Exam:</label>
     <input type="date" id="ExamDateOne" name="ExamDateOne">
@@ -95,11 +95,11 @@
     <label for="RememberMe"> Remember Me? </label>
     <br>
     <br>
-    <button type="submit" id="Print-Schedule" value="Print-Schedule"> Print Schedule </button>
-    <button type="button" id="Default-Schedule" value="Default-Schedule"> Load in Default Schedule </button>
+    <button type="submit" id="Print-Schedule" value="Print-Schedule"> Print Schedule</button>
+    <button type="button" id="Default-Schedule" value="Default-Schedule"> Load in Default Schedule</button>
     </form>
     <!-- Footer-->
-    <div class="footer" id="Final-Schedule">
+    <div class="footer text-center" id="Final-Schedule">
         <div class="container">
     <p> Copyright ThinkTank 2024</p>
     <a href="https://github.com/Nbrown2002/Dev-Harry-Final-Project" target="_blank">Visit Github Repo</a>
