@@ -6,24 +6,23 @@ console.log("Ready!");
 
 // This array shall be used to hold the default schedule prior to making any changes // 
 const defaultschedule = {
-  ExamDateOne:"2024-11-24", 
-  ExamNameOne:"Adv IT Infrastructure",
-  ExamTimeOne:"23:59",
+  ExamDateOne: "2024-11-24", 
+  ExamNameOne: "Adv IT Infrastructure",
+  ExamTimeOne: "23:59",
   ExamOneLocal: "Online",
-  ExamDateTwo:"2024-11-25",
-  ExamNameTwo:"Art Appreciation",
-  ExamTimeTwo:"09:00",
+  ExamDateTwo: "2024-11-25",
+  ExamNameTwo: "Art Appreciation",
+  ExamTimeTwo: "09:00",
   ExamTwoLocal: "Online", 
-  ExamDateThree:"2024-11-26",
-  ExamNameThree:"Web Development", 
-  ExamTimeThree:"23:59",
+  ExamDateThree: "2024-11-26",
+  ExamNameThree: "Web Development", 
+  ExamTimeThree: "23:59",
   ExamThreeLocal: "Online", 
   RememberMe: true
 };
 
 
 // This will load into the input fields the default schedule from the JSON File
-loaddefault.addEventListener("click", function()  {
    document.getElementById('Default-Schedule').addEventListener('click', function() { 
     document.getElementById('ExamDateOne').value = defaultschedule.ExamDateOne; 
     document.getElementById('ExamNameOne').value = defaultschedule.ExamNameOne; 
