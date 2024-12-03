@@ -29,7 +29,7 @@ loaddefault.addEventListener("click", function()  {
     document.getElementById('ExamDateOne').value = defaultschedule.ExamDateOne; 
     document.getElementById('ExamNameOne').value = defaultschedule.ExamNameOne; 
     document.getElementById('ExamTimeOne').value = defaultschedule.ExamTimeOne; 
-    if(defaultschedule.ExamOneLocal == "Online" ){ 
+    if(defaultschedule.ExamOneLocal == 'Online' ){ 
       document.getElementById("Online1").checked = true;}
     else {
       document.getElementById("In-Person1").checked = true; 
@@ -38,7 +38,7 @@ loaddefault.addEventListener("click", function()  {
     document.getElementById('ExamDateTwo').value = defaultschedule.ExamDateTwo; 
     document.getElementById('ExamNameTwo').value = defaultschedule.ExamNameTwo; 
     document.getElementById('ExamTimeTwo').value = defaultschedule.ExamTimeTwo; 
-  if(defaultschedule.ExamTwoLocal == "Online") { 
+  if(defaultschedule.ExamTwoLocal == 'Online') { 
       document.getElementById("Online2").checked = true;}
     else {
       document.getElementById("In-Person2").checked = true; 
@@ -47,7 +47,7 @@ loaddefault.addEventListener("click", function()  {
     document.getElementById('ExamDateThree').value = defaultschedule.ExamDateThree; 
     document.getElementById('ExamNameThree').value = defaultschedule.ExamNameThree; 
     document.getElementById('ExamTimeThree').value = defaultschedule.ExamTimeThree; 
-if(defaultschedule.ExamThreeLocal == "Online") { 
+if(defaultschedule.ExamThreeLocal == 'Online') { 
       document.getElementById("Online3").checked = true;}
     else {
       document.getElementById("In-Person3").checked = true; 
