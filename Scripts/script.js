@@ -28,7 +28,7 @@ loaddefault.addEventListener("click", function()  {
   document.getElementById('Default-Schedule').addEventListener('click', () => { 
     document.getElementById('ExamDateOne').value = defaultschedule.ExamDateOne; 
     document.getElementById('ExamNameOne').value = defaultschedule.ExamNameOne; 
-    document.getElementById('ExamTimeone').value = defaultschedule.ExamTimeOne; 
+    document.getElementById('ExamTimeOne').value = defaultschedule.ExamTimeOne; 
     if(defaultschedule.ExamOneLocal == "Online" ){ 
       document.getElementById("Online1").checked = true;}
     else {
