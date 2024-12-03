@@ -23,6 +23,7 @@ const defaultschedule = {
 
 
 // This will load into the input fields the default schedule from the JSON File
+document.addEventListener('DOMContentLoaded', function () {
    document.getElementById('Default-Schedule').addEventListener('click', function () { 
     document.getElementById('ExamDateOne').value = defaultschedule.ExamDateOne; 
     document.getElementById('ExamNameOne').value = defaultschedule.ExamNameOne; 
@@ -64,5 +65,7 @@ const NewSchedule = {
 
 
   console.log(JSON.stringify(NewSchedule, null, 2));
+  
   document.querySelector(".footer").innerText = JSON.stringify(NewSchedule, null, 2);
   });
+}); 
