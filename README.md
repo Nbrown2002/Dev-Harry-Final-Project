@@ -9,4 +9,4 @@ One of the most frusturating things can be organization. Many events can occur s
 This is more then apparent when preparing for final exams for the semester. It can be rather taxing as a student to prepare for all of these exams when you do not have a 
 fully feldged schedule of when and where everything is. This is why I created this piece of software. It allows students to put in all of their information regarding their upcoming 
 exams and then print out a schedule that puts everything in order from earliest to latest. The app currently allows for three exams to be processed by their date, title, time, and location
-and sorts them out to avoid confusion. 
+and sorts them out to avoid confusion. This way, everything will be organized completely to avoid confusion. 
